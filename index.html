@@ -13,103 +13,166 @@
 </head>
 
 <body>
-   
+
     <div class="container">
         <div class="row">
-                <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" data-bs-toggle="list"
-                        href="#personal-info" onclick="showSection('personal-info')" role="tab" >Personal Information</a>
-                    <a class="list-group-item list-group-item-action"  data-bs-toggle="list"
-                        href="#qualification-info" onclick="showSection('qualification-info')" role="tab" >Qualifications</a>
-                    <a class="list-group-item list-group-item-action"  data-bs-toggle="list"
-                        href="#experience-info" onclick="showSection('experience-info') " role="tab" >Experience</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="list"
-                        href="#otherinfo" onclick="showSection('otherinfo')" role="tab" >Other Information</a>
-                    <a class="list-group-item list-group-item-action" data-bs-toggle="list"
-                        href="#submitData" onclick="showSection('submitData')" role="tab" >Submit Data</a>
-                </div>
-            </div>
-            <div class="row">
-                <h3 style="text-align: center">Resume Information Form</h1>
-                <form>
-                    <div class="section" id="personal-info">
-                        <h2>Contact Information</h2>
-                        <label for="name" class="form-label">Name:<span style="color: red">*</span></label>
-                        <input type="text" id="name" name="name" class="form-control" required
-                            placeholder="Enter your full name" />
-                        <label for="email" class="form-label">Email:<span style="color: red">*</span></label>
-                        <input type="email" id="email" name="email" class="form-control" required
-                            placeholder="Enter your email address" />
-                        <label for="phone" class="form-label">Phone:<span style="color: red">*</span></label>
-                        <input type="tel" id="phone" name="phone" class="form-control" required
-                            placeholder="Enter your phone number" />
-                        <label for="linkedin" class="form-label">LinkedIn:<span style="color: red">*</span></label>
-                        <input type="text" id="linkedin" name="linkedin" required
-                            placeholder="Enter your LinkedIn profile URL" />
-                        <label for="github" class="form-label">GitHub:<span style="color: red">*</span></label>
-                        <input type="text" id="github" name="github" class="form-control" required
-                            placeholder="Enter your GitHub profile URL" />
-                        <h2>Summary</h2>
-                        <label for="summary" class="form-label">Summary:<span style="color: red">*</span></label>
-                        <textarea id="summary" name="summary" class="form-control" required
-                            placeholder="Enter a brief summary about yourself">
-                  </textarea>
-                    </div>
-
-
-                    <div class="section" id="qualification-info">
-                        <h2>Education</h2>
-                        <div id="education"></div>
-                        <button class="add-button" class="btn btn-primary" onclick="return addEducation()">
-                            Add Education
-                        </button>
-                        <h2>Projects</h2>
-                        <div id="projects"></div>
-                        <button class="add-button" class="btn btn-primary" onclick="return addProject()">
-                            Add Project
-                        </button>
-                        <h2>Technical Skills</h2>
-                        <label for="technical-skills" class="form-label">Technical Skills:<span
-                                style="color: red">*</span></label>
-                        <input type="text" id="technical-skills" name="technical-skills" class="form-control" required
-                            placeholder="Enter your technical skills" />
-                        <h2>Soft Skills</h2>
-                        <label for="soft-skills" class="form-label">Soft Skills:<span
-                                style="color: red">*</span></label>
-                        <input type="text" id="soft-skills" name="soft-skills" class="form-control" required
-                            placeholder="Enter your soft skills" />
-                    </div>
-
-                    <div class="section" id="experience-info">
-                        <h2>Experience</h2>
-                        <div id="experience"></div>
-                        <button class="add-button" class="btn btn-primary" onclick="return addExperience()">
-                            Add Experience
-                        </button>
-                    </div>
-
-                    <section class="section" id="otherinfo">
-                        <h2>Certifications</h2>
-                        <div id="certifications"></div>
-                        <button class="add-button" class="btn btn-primary" onclick="return addCertification()">
-                            Add Certification
-                        </button>
-                        <h2>Languages</h2>
-                        <div id="languages"></div>
-                        <button class="add-button" class="btn btn-primary" onclick="return addLanguage()">
-                            Add Languages
-                        </button>
-                    </section>
-
-                    <section class="section" id="submitData">
-                        <h6 >(before submiting data Make sure all the fields are filled correctly)</h6>
-
-                        <button class="btn btn-primary" onclick="submitData()">Submit Data</button>
-                    </section>
-                    
-                </form>
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" data-bs-toggle="list" href="#personal-info"
+                    onclick="showSection('personal-info')" role="tab">Personal Information</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#qualification-info"
+                    onclick="showSection('qualification-info')" role="tab">Qualifications</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#experience-info"
+                    onclick="showSection('experience-info') " role="tab">Experience</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#otherinfo"
+                    onclick="showSection('otherinfo')" role="tab">Other Information</a>
+                <a class="list-group-item list-group-item-action" data-bs-toggle="list" href="#submitData"
+                    onclick="showSection('submitData')" role="tab">Submit Data</a>
             </div>
         </div>
+        <div class="row" style="width: 50%;margin-left: auto;margin-right: auto;margin-top: 20px;">
+            <form>
+                <div class="section" id="personal-info">
+                    <h2>Contact Information</h2>
+                    <label for="name" class="form-label">Name:<span style="color: red">*</span></label>
+                    <input type="text" id="name" name="name" class="form-control" required
+                        placeholder="Enter your full name" value="N/A" />
+                    <label for="title" class="form-label">Title:<span style="color: red">*</span></label>
+                    <input type="text" id="title" name="title" class="form-control" required
+                        placeholder="Enter your job title" value="N/A" />
+                    <label for="email" class="form-label">Email:<span style="color: red">*</span></label>
+                    <input type="email" id="email" name="email" class="form-control" required
+                        placeholder="Enter your email address" value="N/A" />
+                    <label for="phone" class="form-label">Phone:<span style="color: red">*</span></label>
+                    <input type="tel" id="phone" name="phone" class="form-control" required
+                        placeholder="Enter your phone number" value="N/A" />
+                    <label for="address" class="form-label">Address/City:<span style="color: red">*</span></label>
+                    <input type="text" id="address" name="address" class="form-control" required
+                        placeholder="Enter your address/city" value="N/A" />
+                    <label for="linkedin" class="form-label">LinkedIn:<span style="color: red">*</span></label>
+                    <input type="text" id="linkedin" name="linkedin" required
+                        placeholder="Enter your LinkedIn profile URL" value="N/A" />
+                    <label for="github" class="form-label">GitHub:<span style="color: red">*</span></label>
+                    <input type="text" id="github" name="github" class="form-control" required
+                        placeholder="Enter your GitHub profile URL" value="N/A" />
+                    <h2>Summary</h2>
+                    <label for="summary" class="form-label">Summary:<span style="color: red">*</span></label>
+                    <textarea id="summary" name="summary" class="form-control" required
+                        placeholder="Enter a brief summary about yourself" value="N/A">
+                  </textarea>
+                </div>
+
+
+                <div class="section" id="qualification-info">
+                    <h2>Education</h2>
+                    <div id="education">
+                        <label for="education-name1" class="form-label">Education 1:<span
+                                style="color: red">*</span></label>
+                        <input type="text" id="education-name1" name="education-name1" class="form-control" required
+                            placeholder="Enter your education name" value="N/A" />
+                        <label for="education-duration1" class="form-label">Duration:<span
+                                style="color: red">*</span></label>
+                        <input type="text" id="education-duration1" name="education-duration1" class="form-control"
+                            required placeholder="Enter your education duration" value="N/A" />
+                        <label for="education-organization1" class="form-label">Organization:<span
+                                style="color: red">*</span></label>
+                        <input type="text" id="education-organization1" name="education-organization1"
+                            class="form-control" required placeholder="Enter your education organization" value="N/A" />
+                    </div>
+                    <input type="button" class="add-button" class="btn btn-primary" onclick="return addEducation()">
+                    Add Education
+                    </input>
+                    <h2>Projects</h2>
+                    <div id="projects">
+                        <label for="project-name1" class="form-label">Project 1:<span
+                                style="color:red;">*</span></label>
+                        <input type="text" id="project-name1" class="form-control" name="project-name"
+                            required placeholder="Enter your project name" value="N/A">
+                        <label for="project-technologies1" class="form-label">Technologies :<span
+                                style="color:red;">*</span></label>
+                        <input type="text" id="project-technologies1" class="form-control"
+                            name="project-technologies" required placeholder="Enter the technologies used" value="N/A">
+                        <label for="project-purpose1" class="form-label">Purpose :<span
+                                style="color:red;">*</span></label>
+                        <textarea id="project-purpose1" class="form-control" name="project-purpose1"
+                            required placeholder="Enter the purpose of the project" value="N/A"> </textarea>
+                        <label for="project-responsibilities1" class="form-label">Responsibilities :<span
+                                style="color:red;">*</span></label>
+                        <textarea id="project-responsibilities1" class="form-control"
+                            name="project-responsibilities1" required
+                            placeholder="Enter your responsibilities" value="N/A"> </textarea>
+
+                    </div>
+                    <button class="add-button" class="btn btn-primary" onclick="return addProject()">
+                        Add Project
+                    </button>
+                    <h2>Technical Skills</h2>
+                    <label for="technical-skills" class="form-label">Technical Skills:<span
+                            style="color: red">*</span></label>
+                    <input type="text" id="technical-skills" name="technical-skills" class="form-control" required
+                        placeholder="Enter your technical skills" value="N/A" />
+                    <h2>Soft Skills</h2>
+                    <label for="soft-skills" class="form-label">Soft Skills:<span style="color: red">*</span></label>
+                    <input type="text" id="soft-skills" name="soft-skills" class="form-control" required
+                        placeholder="Enter your soft skills" value="N/A" />
+                </div>
+
+                <div class="section" id="experience-info">
+                    <h2>Experience</h2>
+                    <div id="experience">
+                        <label for="experience-name1" class="form-label">Experience 1:<span
+                                style="color: red">*</span></label>
+                        <input type="text" id="experience-name1" name="experience-name1" class="form-control" required
+                            placeholder="Enter your experience name" value="N/A" />
+                        <label for="experience-duration1" class="form-label">Duration:<span
+                                style="color: red">*</span></label>
+                        <input type="text" id="experience-duration1" name="experience-duration1" class="form-control"
+                            required placeholder="Enter your experience duration" value="N/A" />
+                        <label for="experience-organization1" class="form-label">Organization:<span
+                                style="color: red">*</span></label>
+                        <input type="text" id="experience-organization1" name="experience-organization1"
+                            class="form-control" required placeholder="Enter your experience organization"
+                            value="N/A" />
+                    </div>
+                    <button class="add-button" class="btn btn-primary" onclick="return addExperience()">
+                        Add Experience
+                    </button>
+                </div>
+
+                <section class="section" id="otherinfo">
+                    <h2>Certifications</h2>
+                    <div id="certifications">
+                        <label for="certification-name1" class="form-label">Certification Name 1:<span style="color:red;">*</span></label>
+                        <input type="text" id="certification-name1" class="form-control" name="certification-name" required placeholder="Enter your certification name" value="N/A" >
+                        <label for="certification-organization1" class="form-label">Issuing Organization:<span style="color:red;">*</span></label>
+                        <input type="text" id="certification-organization1" class="form-control" name="certification-organization" required placeholder="Enter the issuing organization" value="N/A" >
+                        <label for="certification-duration1" class="form-label">Duration:<span style="color:red;">*</span></label>
+                        <input type="text" id="certification-duration1" class="form-control" name="certification-duration" required placeholder="Enter the certification duration" value="N/A" >
+                        
+                    </div>
+                    <button class="add-button" class="btn btn-primary" onclick="return addCertification()">
+                        Add Certification
+                    </button>
+                    <h2>Languages</h2>
+                    <div id="languages">
+                        <label for="language-name1" class="form-label">Language 1:<span
+                                style="color: red">*</span></label>
+                        <input type="text" id="language-name1" name="language-name1" class="form-control" required
+                            placeholder="Enter your language name" value="N/A" />
+                    </div>
+                    <button class="add-button" class="btn btn-primary" onclick="return addLanguage()">
+                        Add Languages
+                    </button>
+                </section>
+
+                <section class="section" id="submitData">
+                    <h6>(before submiting data Make sure all the fields are filled correctly)</h6>
+
+                    <button class="btn btn-primary" onclick="return submitData()">Submit Data</button>
+                </section>
+
+            </form>
+        </div>
+    </div>
     </div>
 
     <script src="script.js"></script>

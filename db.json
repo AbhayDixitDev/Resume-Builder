@@ -1,0 +1,122 @@
+{
+  "Resumes": [
+    {
+      "id": "1",
+      "name": "Abhay Dixit",
+      "title": "MERN Full Stack Developer",
+      "contact": {
+        "email": "Abhaydixit.dev@gmail.com",
+        "phone": "+91 7017709865"
+      },
+      "location": "BHOPAL",
+      "socialMedia": {
+        "linkedin": "https://www.linkedin.com/in/AbhayDixitDev",
+        "github": "https://github.com/Abhay-DixitDev"
+      },
+      "summary": "A highly driven web developer with a strong foundation in both frontend and backend development, committed to staying ahead of the curve in the IT sector, eager to collaborate on cutting-edge projects and drive success and innovation in a dynamic organization.",
+      "projects": [
+        {
+          "title": "Flight Booking System Website",
+          "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "JSON",
+            "Vercel",
+            "VS Code",
+            "GitHub"
+          ],
+          "purpose": "This project aimed to develop a flight booking system from scratch, simulating a real-world scenario for an online travel agency.",
+          "responsibilities": "Developed features for flight search, booking, history, and an admin panel for managing airlines and users. Created a responsive website using HTML, CSS, and JavaScript for a smooth user experience.Used GitHub for version control and Vercel for deployment, incorporating feedback for code improvement."
+        },
+        {
+          "title": "E-Voting Web Application",
+          "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript (JS)",
+            "PHP",
+            "SQL",
+            "XAMPP Server"
+          ],
+          "purpose": "This project involved developing a functional Server-Side E-voting web application, simulating creating a secure voting system.",
+          "responsibilities": "Developed secure PHP/SQL applications, ensuring data integrity and confidentiality. Used JavaScript to add dynamic features to the client side. Employed XAMPP Server for testing and deployment, demonstrating server-side development skills."
+        }
+      ],
+      "certifications": [
+        {
+          "title": "MERN Full Stack Developer",
+          "duration": "April 2024-Present",
+          "organization": "CYBROM Technologies Pvt. Ltd., Bhopal",
+          "skills": "Built intuitive web apps with HTML, CSS, and JavaScript for engaging user experiences. Stayed current with evolving technologies through resourceful learning and mastered Git and GitHub for efficient code management. Troubleshoot and resolved issues using console logs and breakpoints, demonstrating a growth mindset through continuous learning and improvement."
+        },
+        {
+          "title": "Global Service Desk Certificate",
+          "organization": "NIIT Foundation & DXC Technology",
+          "skills": "Utilized active listening to understand customer needs and deliver positive interactions. Developed analytical skills to diagnose and resolve client issues efficiently. Demonstrated effective collaboration skills and adaptability in fast-paced service environments."
+        }
+      ],
+      "technicalSkills": "JavaScript, PHP, HTML, CSS, MySQL, Tailwind CSS, SQL & JSON, Database Design & MySQL Workbench, Version Control Systems: Git & GitHub, IDE: VS Code & NetBeans IDE, Project Management: JIRA",
+      "softSkills": "Effective Communication, Problem Solving, Teamwork",
+      "education": [
+        {
+          "degree": "B. Tech. in Information Technology",
+          "institution": "University Institute of Technology RGPV, Bhopal, Madhya Pradesh",
+          "duration": "2020-2023"
+        },
+        {
+          "degree": "Polytechnic Diploma in Computer Science",
+          "institution": "S.R. Govt. Polytechnic College, Sagar, Madhya Pradesh",
+          "duration": "2017-2020"
+        }
+      ],
+      "languages": "English,Hindi"
+    },
+    {
+      "id": "fff4",
+      "name": "N/A",
+      "title": "N/A",
+      "contact": {
+        "email": "N/A",
+        "phone": "N/A"
+      },
+      "location": "N/A",
+      "socialMedia": {
+        "linkedin": "N/A",
+        "github": "N/A"
+      },
+      "summary": "                  ",
+      "projects": [
+        {
+          "title": "N/A",
+          "technologies": "N/A",
+          "purpose": " ",
+          "responsibilities": " "
+        }
+      ],
+      "certifications": [
+        {
+          "title": "N/A",
+          "organization": "N/A",
+          "duration": "N/A"
+        }
+      ],
+      "technicalSkills": "N/A",
+      "softSkills": "N/A",
+      "education": [
+        {
+          "title": "N/A",
+          "organization": "N/A",
+          "duration": "N/A"
+        }
+      ],
+      "experience": [
+        {
+          "title": "N/A",
+          "organization": "N/A",
+          "duration": "N/A"
+        }
+      ]
+    }
+  ]
+}

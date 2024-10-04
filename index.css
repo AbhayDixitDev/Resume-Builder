@@ -74,6 +74,10 @@ button {
 #otherinfo{
   display: none;
 }
+
+#submitData{
+  display: none;
+}
 h6 {
     color: red;
     font-size: 0.8rem !important;
@@ -91,7 +95,6 @@ h6 {
     top: 0;
     left: 0;
     width: 100vw;
-
     /* background-color: #ffffff !important; */
     color: #ddd !important;
   }
