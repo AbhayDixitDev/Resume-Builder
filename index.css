@@ -1,0 +1,115 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+body {
+  font-family: sans-serif;
+  background-color: #000 !important;
+color: #ddd !important;
+}
+form {
+  width: 50%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgb(19, 158, 212);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+label {
+ 
+  color: #ddd;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+.section {
+  margin-bottom: 20px;
+}
+.add-button {
+  margin-top: 10px;
+}
+
+h2 {
+  color: #ddd;
+
+}
+
+.section input[type="text"],
+.section input[type="email"],
+.section input[type="tel"],
+.section textarea,
+.section select {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  width: 160px;
+  padding: 10px;  
+  border-radius: 10px !important;  
+  border: 1px solid #ddd;
+}
+
+#qualification-info{
+  display: none;
+}
+
+#experience-info{
+  display: none;
+}
+
+#otherinfo{
+  display: none;
+}
+h6 {
+    color: red;
+    font-size: 0.8rem !important;
+  
+  }
+  .col-md-3{
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+    
+  }
+  .list-group{
+    margin-top: 20px !important;
+    display: inline-block !important;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+
+    /* background-color: #ffffff !important; */
+    color: #ddd !important;
+  }
+
+
+  .list-group-item{
+    display: inline !important;
+    padding-left: 70px !important;
+    padding-right: 70px !important;
+    background-color: #fff !important;
+    color: #000 !important;
+    
+  }
+
+  .list-group-item.active{
+    background-color:  rgb(19, 158, 212) !important;
+    color: #fff !important;
+  }
+
+
+    
